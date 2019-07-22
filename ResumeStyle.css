@@ -1,0 +1,136 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.catgroup {
+	display:flex;
+	flex-wrap:wrap;
+	/*justify-content: center;*/
+	justify-content: space-around;
+	border-bottom: 2px solid yellow;
+	border-top:1px solid yellow;
+	font-family: verdana;
+	font-size: 13.5px;
+	margin: 0 auto;
+
+}
+/*four long boxes, one should be grey later*/
+
+.firstrow {
+	height:200px;
+	background-color:lightgrey;
+}
+
+
+
+.lastrow{
+	height:200px;
+}
+
+
+
+.third {
+	width:33.33%;
+	height:300px;;
+	/*border:2px solid yellow;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: top;
+	align-items: left;
+	text-align: left;
+}
+/*third section boxes*/
+
+.pic {
+	border-radius: 50px;
+}
+
+.twothird {
+	width:66.66%;
+	height:300px;
+	/*background-color:yellow;*/
+	/*border:2px solid red;*/
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+	flex-wrap:nowrap;
+
+
+}
+/*two third long section boxes*/
+
+.work {
+	width:100%;
+	height:100px;
+	/*background-color:pink;*/
+	/*border:2px solid green;*/
+	display:flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: stretch;
+	text-align: left;
+	/*flex-wrap:nowrap;*/
+
+
+}
+/*break in the work section
+added in fle wrap, before height was 300 and width was 66%*/
+
+p.title{
+	font-size: 15px;
+	font-weight:bold;
+	text-decoration: underline solid yellow;
+}
+
+p.company{
+	font-weight:bold;
+}
+
+p.location{
+	font-style:italic;
+
+}
+
+p.time{
+	font-style:italic;
+
+}
+
+.left{
+	width:30%;
+	height:33px;
+	flex-wrap:nowrap;
+	display:flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items: stretch;
+	align-content:space-evenly;
+
+}
+
+.right{
+	width:70%;
+	height:33px;
+	flex-wrap:wrap;
+	justify-content: left;
+	flex-direction: column;
+	display:inline-block;
+	/*justify-content: space-around;*/
+	/*align-items: stretch;*/
+	/*display:flex;*/
+	/*flex-wrap: wrap;*/
+	/*flex-direction: row;*/
+}
+
+/*currently have split left and right within the rows, would it make more sense to split
+all content across rows? and not left and right 
